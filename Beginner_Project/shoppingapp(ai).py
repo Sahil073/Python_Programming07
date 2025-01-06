@@ -64,7 +64,7 @@ def add_item_inCart(user_cart):
     if item_to_added == "none":
         return
     speak("Enter number of quantity: ")
-    number_quantity = take_number()
+    number_quantity = takecommand()
     try:
         number_quantity = int(number_quantity)
     except ValueError:
